@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  margin: 10px auto;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 50px;
+  background-color: #3edefa;
+  padding: 5px;
+}
+
+input, label {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  border-radius: 63px;
+  background-color: #0bd2f5;
+  cursor: pointer;
+}

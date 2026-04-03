@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="back.css">
+    <title>Form Automation Test</title>
+</head>
+<body>
+    <h2>Secure Login Simulation</h2>
+    <form onsubmit="login(event)">
+        <input type="text" id="user" required maxlength="20" placeholder="User">
+        <input type="password" id="pass" required minlength="4" placeholder="Password">
+        <button type="submit">Enter</button>
+    </form>
+    <script>
+        let chances = 0
+
+        function login(event) {
+            event.preventDefault();
+            let u = document.getElementById("user").value;
+            let p = document.getElementById("pass").value;
+            
+            chances++;
+            
+            if (chances > 3) {
+            alert("Too many attempts. Try again later.");
+            return;
+            }
+        
+        //“Even in this improved version, credentials are still handled on the client side, which is not secure in real-world applications.”
+        if (u === "admin" && p === "1234") {
+            window.location.href = "form.html";
+        } else {
+            setTimeout(() => {
+                alert("User or password incorrect");
+                }, 500);
+            document.getElementById("pass").value = "";
+            document.getElementById("user").value = "";
+        }
+        }
+    </script>
+</body>
