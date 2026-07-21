@@ -1,27 +1,19 @@
-# Web Security Login Simulation
-
-## Overview
-
 This project demonstrates common security issues in web authentication systems and compares an insecure implementation with an improved version.
 
 The goal is educational: to show how poor client-side security practices can expose applications to attacks and how some basic protections can reduce risk.
 
 This project was created as a learning exercise in web development and introductory cybersecurity concepts.
 
-
-
-## Project Structure
+ Project Structure
 
 /project
-├── index.html → Project explanation and navigation
+├── index.html → Project explanation 
 ├── insecure.html → Vulnerable login implementation
 ├── secure.html → Improved login implementation
 ├── form.html → Page accessed after login
-├── back.css → Basic styling
+├── back.css → Styling
 
-
-
-## Insecure Version
+Insecure Version
 
 The insecure version demonstrates common mistakes found in beginner web applications.
 
@@ -43,9 +35,7 @@ if (u === "admin" && p === "1234") {
 
 Because the verification happens in the browser, an attacker could inspect or manipulate the code and bypass the login system.
 
-
-
-## Improved Version
+Improved Version
 
 The secure version introduces basic defensive practices while still remaining a front-end simulation.
 
@@ -59,7 +49,6 @@ Security improvements:
 
 Example protection logic:
 
-
 let chances = 0;
 
 if (chances >= 3) {
@@ -72,7 +61,7 @@ Important note:
 In real-world applications, authentication must be handled on the server side with encrypted password storage and proper backend validation.
 
 
-## Automation and Security Testing
+Automation and Security Testing
 
 Automation can be used to test whether a login system is secure.
 
@@ -97,31 +86,19 @@ Security systems often defend against this by:
 
 
 
-## Educational Purpose
+Educational Purpose
 
-This project is intended to demonstrate:
+This litle project is intended to demonstrate:
 
 * Basic web development with HTML and JavaScript
 * Common web security mistakes
 * Introductory concepts in ethical hacking and defensive security
 
-The focus is on **understanding vulnerabilities and improving system design**, not exploiting real systems.
-
-
-
-## Future Improvements
-
-Possible future expansions:
-
-* Server-side authentication simulation
-* Password hashing examples
-* Logging login attempts
-* Demonstration of common web vulnerabilities
-* Automated security testing scripts
+The focus is on understanding vulnerabilities and improving system design, not exploiting real systems.
 
 
 
 ## Author
 
 Victor Fonseca
-Cybersecurity learning project
+A Cybersecurity student
